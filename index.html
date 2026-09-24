@@ -33,7 +33,6 @@
       position: relative;
     }
 
-    /* ========== CORAZONES FLOTANTES ========== */
     .hearts-container {
       position: fixed;
       top: 0;
@@ -66,7 +65,6 @@
       }
     }
 
-    /* ========== CONFETI ========== */
     .confetti {
       position: fixed;
       width: 8px;
@@ -86,7 +84,6 @@
       }
     }
 
-    /* ========== PANTALLA INICIAL (SOBRE) ========== */
     #screen-envelope {
       position: fixed;
       inset: 0;
@@ -233,7 +230,6 @@
       margin-bottom: 30px;
     }
 
-    /* ========== CONTENIDO PRINCIPAL ========== */
     #main-content {
       position: relative;
       z-index: 10;
@@ -250,7 +246,6 @@
       transform: translateY(0);
     }
 
-    /* ========== MENSAJE ========== */
     .message-card {
       background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(12px);
@@ -305,7 +300,6 @@
       margin-top: 24px;
     }
 
-    /* ========== GALERÍA DE RECUERDOS ========== */
     .section-title {
       text-align: center;
       margin-bottom: 30px;
@@ -397,7 +391,6 @@
       border-radius: 2px;
     }
 
-    /* ========== BOTÓN FINAL ========== */
     .final-section {
       text-align: center;
       padding: 30px 20px;
@@ -438,7 +431,6 @@
       transform: scale(0.98);
     }
 
-    /* ========== MODAL DE ABRAZO ========== */
     #abrazo-modal {
       position: fixed;
       inset: 0;
@@ -492,7 +484,6 @@
       color: #7a5a65;
     }
 
-    /* ========== RESPONSIVE ========== */
     @media (max-width: 600px) {
       .title-main { font-size: 34px; }
       .message-card { padding: 30px 22px; }
@@ -506,10 +497,8 @@
 </head>
 <body>
 
-  <!-- Corazones flotantes -->
   <div class="hearts-container" id="hearts"></div>
 
-  <!-- ========== PANTALLA DEL SOBRE ========== -->
   <div id="screen-envelope">
     <div class="title-main">Para ti</div>
     <div class="subtitle">Toca el sobre</div>
@@ -527,15 +516,12 @@
     <p class="tap-hint">♡ Toca para abrir tu regalo ♡</p>
   </div>
 
-  <!-- ========== CONTENIDO PRINCIPAL ========== -->
   <div id="main-content">
     
-    <!-- Mensaje principal -->
     <div class="message-card">
       <h1>Feliz Cumpleaños<br>mi amor</h1>
       <div class="date">✦ Un día especial para ti ✦</div>
       
-      <!-- ====== EDITA ESTE MENSAJE ====== -->
       <p>
         Hoy celebramos el día en que el mundo se volvió más bonito… porque naciste tú.
       </p>
@@ -545,12 +531,10 @@
       <p>
         Gracias por ser mi hogar, mi paz y mi aventura favorita.
       </p>
-      <!-- ================================ -->
 
       <div class="signature">Con todo mi amor</div>
     </div>
 
-    <!-- Galería de recuerdos -->
     <div class="section-title">
       <h2>Nuestro viaje de recuerdos</h2>
       <p>Desliza para ver cada momento</p>
@@ -559,48 +543,81 @@
     <div class="gallery-container">
       <div class="gallery" id="gallery">
         
-        <!-- ========== FOTO 1 ========== -->
         <div class="polaroid">
           <div class="tape"></div>
-          <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=500&q=80" alt="Recuerdo 1" />
+          <img src="foto1.jpeg" alt="Recuerdo 1" />
           <div class="caption">Nuestro primer momento</div>
         </div>
 
-        <!-- ========== FOTO 2 ========== -->
         <div class="polaroid">
           <div class="tape"></div>
-          <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=500&q=80" alt="Recuerdo 2" />
+          <img src="foto2.jpeg" alt="Recuerdo 2" />
           <div class="caption">Risas que nunca olvidaré</div>
         </div>
 
-        <!-- ========== FOTO 3 ========== -->
         <div class="polaroid">
           <div class="tape"></div>
-          <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=500&q=80" alt="Recuerdo 3" />
+          <img src="foto3.jpeg" alt="Recuerdo 3" />
           <div class="caption">Contigo todo es mejor</div>
         </div>
 
-        <!-- ========== FOTO 4 ========== -->
         <div class="polaroid">
           <div class="tape"></div>
-          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500&q=80" alt="Recuerdo 4" />
+          <img src="foto4.jpeg" alt="Recuerdo 4" />
           <div class="caption">Un día perfecto</div>
         </div>
 
-        <!-- ========== FOTO 5 ========== -->
         <div class="polaroid">
           <div class="tape"></div>
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&q=80" alt="Recuerdo 5" />
+          <img src="foto5.jpeg" alt="Recuerdo 5" />
           <div class="caption">Tu sonrisa es mi favorita</div>
         </div>
 
-        <!-- ========== AGREGA MÁS FOTOS AQUÍ ========== -->
-        <!-- Copia uno de los bloques de arriba y cambia la imagen y el texto -->
+        <div class="polaroid">
+          <div class="tape"></div>
+          <img src="foto6.jpeg" alt="Recuerdo 6" />
+          <div class="caption">Momentos que atesoro</div>
+        </div>
+
+        <div class="polaroid">
+          <div class="tape"></div>
+          <img src="foto7.jpeg" alt="Recuerdo 7" />
+          <div class="caption">Juntos siempre</div>
+        </div>
+
+        <div class="polaroid">
+          <div class="tape"></div>
+          <img src="foto8.jpeg" alt="Recuerdo 8" />
+          <div class="caption">Miradas que lo dicen todo</div>
+        </div>
+
+        <div class="polaroid">
+          <div class="tape"></div>
+          <img src="foto9.jpeg" alt="Recuerdo 9" />
+          <div class="caption">Aventuras contigo</div>
+        </div>
+
+        <div class="polaroid">
+          <div class="tape"></div>
+          <img src="foto10.jpeg" alt="Recuerdo 10" />
+          <div class="caption">Mi lugar favorito eres tú</div>
+        </div>
+
+        <div class="polaroid">
+          <div class="tape"></div>
+          <img src="foto11.jpeg" alt="Recuerdo 11" />
+          <div class="caption">Recuerdos que guardo en el corazón</div>
+        </div>
+
+        <div class="polaroid">
+          <div class="tape"></div>
+          <img src="foto12.jpeg" alt="Recuerdo 12" />
+          <div class="caption">Para siempre nosotros</div>
+        </div>
 
       </div>
     </div>
 
-    <!-- Sección final -->
     <div class="final-section">
       <p>
         Que este año esté lleno de momentos<br>
@@ -613,7 +630,6 @@
     </div>
   </div>
 
-  <!-- Modal del abrazo -->
   <div id="abrazo-modal">
     <div class="abrazo-content">
       <div class="big-heart">💖</div>
@@ -623,7 +639,6 @@
   </div>
 
   <script>
-    // ========== CREAR CORAZONES FLOTANTES ==========
     function createHearts() {
       const container = document.getElementById('hearts');
       const hearts = ['💖', '💗', '💕', '💓', '❤️', '💞'];
@@ -641,7 +656,6 @@
     }
     createHearts();
 
-    // ========== CONFETI ==========
     function createConfetti() {
       const colors = ['#ff6b9d', '#ffb6c1', '#ffd1dc', '#d4a574', '#ff8fab', '#fff'];
       for (let i = 0; i < 50; i++) {
@@ -660,7 +674,6 @@
       }
     }
 
-    // ========== ABRIR SOBRE ==========
     const envelopeBtn = document.getElementById('envelope-btn');
     const envelope = document.getElementById('envelope');
     const screenEnvelope = document.getElementById('screen-envelope');
@@ -676,7 +689,6 @@
       }, 900);
     });
 
-    // ========== BOTÓN ABRAZO ==========
     const btnAbrazo = document.getElementById('btn-abrazo');
     const modal = document.getElementById('abrazo-modal');
 
@@ -689,7 +701,6 @@
       }, 2800);
     });
 
-    // Cerrar modal al tocar
     modal.addEventListener('click', () => {
       modal.classList.remove('show');
     });
